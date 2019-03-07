@@ -1,0 +1,7 @@
+def cards():
+  color = ['红心', '方块', '梅花','黑桃']  # 将花色放在一个列表中待用
+  num = list(range(2, 11))
+  num.extend('JQKA')  # 通过两行代码，生成一个 2-A 的数字列表。
+  return [(x, y) for x in color for y in num ]  # 用列表生成式完成扑克牌的生成。
+
+print(cards())
